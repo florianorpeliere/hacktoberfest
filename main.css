@@ -1,0 +1,37 @@
+@font-face {
+    font-family: PrinceValiant;
+    src: url(PrinceValiant.ttf);
+}
+
+body {
+    background-image: radial-gradient(circle, #3241a6 0, #202a6b 120%);
+}
+
+.app {
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 27px;
+}
+
+.text:before {
+    content: '';
+    display: block;
+    height: 60px;
+}
+
+.count {
+    font-family: PrinceValiant;
+    color: #e88565;
+    font-size: 80px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto 20px;
+}
