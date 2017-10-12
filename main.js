@@ -4,6 +4,9 @@ function calculate() {
   Promise.all(users.map(getPullRequestHacktoberfest))
       .then(results => results.reduce((total, count) => total += count, 0))
       .then(total => {
+        if(total < 10) {
+          total = "0" + total;
+        }
         document.getElementById('pr').innerHTML =  `<span class="count">${total}</span>`
       });
 }

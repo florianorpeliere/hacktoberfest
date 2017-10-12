@@ -11,8 +11,12 @@ body {
     margin: auto;
     text-align: center;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Montserrat";
     font-size: 27px;
+}
+
+.text {
+    font-size: 40px;
 }
 
 .text:before {
@@ -24,14 +28,25 @@ body {
 .count {
     font-family: PrinceValiant;
     color: #e88565;
-    font-size: 80px;
+    font-size: 180px;
     margin-left: 20px;
 }
 
 .container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
     justify-content: center;
     width: 800px;
     margin: 0 auto 20px;
+}
+
+.sfeir-logo {
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.hack {
+    height: 300px;
 }
