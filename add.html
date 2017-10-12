@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacktoberfest @ Sfeir</title>
+</head>
+<body>
+    <textarea name="list" id="list" cols="30" rows="10"></textarea>
+    <button class="add">Add</button>
+    <script>
+        document.querySelector('.add').addEventListener('click', () => {
+          listString = document.getElementById('list').value;
+          localStorage.setItem('users', JSON.stringify(listString.split('\n')))
+        });
+    </script>
+</body>
+</html>

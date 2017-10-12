@@ -1,5 +1,5 @@
 function calculate() {
-  const users = ['SiegfriedEhret', 'florianorpeliere'];
+  const users = JSON.parse(localStorage.getItem('users'));
 
   Promise.all(users.map(getPullRequestHacktoberfest))
       .then(results => results.reduce((total, count) => total += count, 0))
