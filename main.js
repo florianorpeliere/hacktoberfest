@@ -12,7 +12,7 @@ function calculate() {
 }
 
 function getPullRequestHacktoberfest(author) {
-  return fetch(`https://api.github.com/search/issues?q=type:pr+author:${author}+created:%3E2017-10-01`)
+  return fetch(`https://api.github.com/search/issues?q=type:pr+author:${author}+created:%3E2018-10-01`)
       .then(response => response.json())
       .then(json => json['total_count']);
 }

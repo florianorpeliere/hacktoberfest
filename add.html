@@ -8,9 +8,13 @@
     <textarea name="list" id="list" cols="30" rows="10"></textarea>
     <button class="add">Add</button>
     <script>
+        const textarea = document.getElementById('list');
+
+        textarea.value = JSON.parse(localStorage.getItem('users')).join('\n');
+        
         document.querySelector('.add').addEventListener('click', () => {
-          listString = document.getElementById('list').value;
-          localStorage.setItem('users', JSON.stringify(listString.split('\n')))
+          listString = textarea.value;
+          localStorage.setItem('users', JSON.stringify(listString.split('\n').map(name => name.trim())))
         });
     </script>
 </body>
