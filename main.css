@@ -3,12 +3,14 @@
     src: url(PrinceValiant.ttf);
 }
 
-html {
-    background-color: #562d41;
+@font-face {
+    font-family: FreshMarker;
+    src: url(freshmarker.ttf);
 }
 
 body {
     background-image: url(./hacktoberfest.png);
+    background-size: cover;
     height: 98vh;
 }
 
@@ -21,7 +23,10 @@ body {
 }
 
 .text {
-    font-size: 60px;
+    font-size: 100px;
+    background: linear-gradient(#4aa7ff, #b224c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text:before {
@@ -31,9 +36,12 @@ body {
 }
 
 .count {
-    color: #e88565;
-    font-size: 180px;
+    background: linear-gradient(#f013af, #a220c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 200px;
     margin-left: 20px;
+    font-family: FreshMarker;
 }
 
 .container {
@@ -44,7 +52,6 @@ body {
     width: 800px;
     left: 1000px;
     top: 100px;
-    color: #f99957;
     font-family: PrinceValiant;
 }
 
